@@ -27,6 +27,17 @@ body {
     font-family: "Heebo", sans-serif;
 }
 
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
 .section {
     padding: min(100px, 10%);
     margin-bottom: max(200px, 15%);
@@ -79,6 +90,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: max(150px, 15%);
+    transition: opacity 0.3s ease;
 }
 
 #homeTitle {
@@ -232,6 +244,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
+    transition: opacity 0.3s ease;
 }
 
 #reachTitle {
